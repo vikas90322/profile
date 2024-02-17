@@ -1,16 +1,15 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import './App.css';
+import Task1 from './Components/Task1';
 
 function App() {
   return (
     <>
-    
-    <div>
-
-My First Deploy
-re uploded
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Task1/>}/>
+        </Routes>
+        </Router>
 
     </>
   );
